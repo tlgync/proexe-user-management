@@ -1,0 +1,39 @@
+.header_container{
+    position: fixed;
+    top: 0;
+    height: 75px;
+    width: 100%;
+    background: #E5ECFC;
+    z-index: 90;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.profile_container{
+    position: relative;
+    width: 100;
+    height: 100;
+    border: 2px solid #0378CC;
+    box-shadow: #fff 0px 20px 30px -10px;
+    border-radius: 50%;
+    margin-right: 60px;
+    display: flex;
+}
+
+.profile_image{
+    border-radius: 50%;
+}
+
+.header_container span{  
+    color:#0378CC;
+    font-size: 13px;
+    margin-right: 7px;
+    font-weight: 500;
+    
+}
+
+.header_container i {
+    color: #fff;
+}

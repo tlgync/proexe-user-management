@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+// import { HeaderSide } from './Components/HeaderSide';
+// import { UserDetail } from './Views/Dashboard/UserDetail';
+import { LeftSideBar } from './components/LeftSideBar';
 
-function App() {
-  return (
+export const App = () => (
+  <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LeftSideBar />
+      {/* <Switch>
+        <Route path="/user/:id" component={UserDetail} />
+      </Switch> */}
     </div>
-  );
-}
+
+  </BrowserRouter>
+);
 
 export default App;
